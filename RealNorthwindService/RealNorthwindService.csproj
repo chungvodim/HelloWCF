@@ -69,7 +69,9 @@
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="HostIISTcp\bin\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="HostIIS\bin\RealNorthwindService.dll" />
     <Content Include="HostIIS\bin\RealNorthwindService.pdb" />
@@ -85,6 +87,8 @@
     <PostBuildEvent>
       xcopy "$(AssemblyName).dll" "C:\WorkSpace\HelloWCF\RealNorthwindService\HostIIS\bin" /Y
       xcopy "$(AssemblyName).pdb" "C:\WorkSpace\HelloWCF\RealNorthwindService\HostIIS\bin" /Y
+      xcopy "$(AssemblyName).dll" "C:\WorkSpace\HelloWCF\RealNorthwindService\HostIISTcp\bin" /Y
+      xcopy "$(AssemblyName).pdb" "C:\WorkSpace\HelloWCF\RealNorthwindService\HostIISTcp\bin" /Y
     </PostBuildEvent>
   </PropertyGroup>
   <ProjectExtensions>
