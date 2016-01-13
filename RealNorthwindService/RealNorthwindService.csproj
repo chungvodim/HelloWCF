@@ -64,6 +64,13 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
+    <None Include="HostIIS\bin\RealNorthwindService.dll.config" />
+    <None Include="HostIIS\Web.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="HostIIS\bin\RealNorthwindService.dll" />
+    <Content Include="HostIIS\bin\RealNorthwindService.pdb" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
