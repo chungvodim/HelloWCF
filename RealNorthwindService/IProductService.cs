@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
+using System.ServiceModel.Web;
 using System.Text;
 
 namespace RealNorthwindService
@@ -11,6 +12,7 @@ namespace RealNorthwindService
     [ServiceContract]
     public interface IProductService
     {
+        //[WebGet(UriTemplate = "date/{year}/{month}/{day}", ResponseFormat = WebMessageFormat.Xml)]
         [OperationContract]
         [FaultContract(typeof(ProductFault))]
         Product GetProduct(int id);
