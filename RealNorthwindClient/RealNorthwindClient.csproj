@@ -53,16 +53,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Service References\ProductServiceRef\item.xsd">
+    <None Include="Service References\ProductServiceRef\ProductService.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ProductServiceRef\item1.xsd">
+    <None Include="Service References\ProductServiceRef\ProductService1.wsdl" />
+    <None Include="Service References\ProductServiceRef\ProductService1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ProductServiceRef\item2.xsd">
+    <None Include="Service References\ProductServiceRef\ProductService2.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ProductServiceRef\ProductService.wsdl" />
     <None Include="Service References\ProductServiceRef\RealNorthwindClient.ProductServiceRef.Product.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -77,9 +77,6 @@
     <WCFMetadataStorage Include="Service References\ProductServiceRef\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\ProductServiceRef\item.disco" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Service References\ProductServiceRef\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
@@ -90,6 +87,9 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ProductServiceRef\ProductService.disco" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -19,14 +19,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:8080/RealNorthwindService/ProductService/" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:8080/productservice.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="b80af4b4-5632-440e-b150-d45868a7fbd8" SourceId="1" SourceUrl="http://localhost:8080/RealNorthwindService/ProductService/?xsd=xsd0" />
-    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="df01d42c-4d07-4e30-8fe6-d4c0f5da54a7" SourceId="1" SourceUrl="http://localhost:8080/RealNorthwindService/ProductService/?disco" />
-    <MetadataFile FileName="ProductService.wsdl" MetadataType="Wsdl" ID="ef5a8d26-b994-4cfc-985f-9946d40981c0" SourceId="1" SourceUrl="http://localhost:8080/RealNorthwindService/ProductService/?wsdl" />
-    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="aa0a9040-83f3-423b-a623-fbffd02a4b78" SourceId="1" SourceUrl="http://localhost:8080/RealNorthwindService/ProductService/?xsd=xsd2" />
-    <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="803a10f9-128b-4a43-b380-1cc557d7498e" SourceId="1" SourceUrl="http://localhost:8080/RealNorthwindService/ProductService/?xsd=xsd1" />
+    <MetadataFile FileName="ProductService1.wsdl" MetadataType="Wsdl" ID="ae30fb6c-72b9-406e-a432-892ae29eaeb4" SourceId="1" SourceUrl="http://sdev:8080/ProductService.svc?wsdl" />
+    <MetadataFile FileName="ProductService.xsd" MetadataType="Schema" ID="2e746b3c-f329-484c-830a-fb0ebe87a43d" SourceId="1" SourceUrl="http://sdev:8080/ProductService.svc?xsd=xsd1" />
+    <MetadataFile FileName="ProductService.disco" MetadataType="Disco" ID="bdb98a53-8386-4b85-8464-f4cb37a6fd71" SourceId="1" SourceUrl="http://sdev:8080/ProductService.svc?disco" />
+    <MetadataFile FileName="ProductService1.xsd" MetadataType="Schema" ID="6adc0c7c-19a8-42ba-91b0-ad3942d499cc" SourceId="1" SourceUrl="http://sdev:8080/ProductService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ProductService2.xsd" MetadataType="Schema" ID="36fc3f58-e8a8-493a-a4e9-4f12a3b73979" SourceId="1" SourceUrl="http://sdev:8080/ProductService.svc?xsd=xsd2" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

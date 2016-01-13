@@ -65,7 +65,9 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="HostIIS\bin\RealNorthwindService.dll.config" />
-    <None Include="HostIIS\Web.config" />
+    <None Include="HostIIS\Web.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -79,6 +81,12 @@
     <WcfServiceModelTargetPath>$(VSToolsPath)\WCF</WcfServiceModelTargetPath>
   </PropertyGroup>
   <Import Project="$(WcfServiceModelTargetPath)\Microsoft.VisualStudio.ServiceModel.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+      xcopy "$(AssemblyName).dll" "C:\WorkSpace\HelloWCF\RealNorthwindService\HostIIS\bin" /Y
+      xcopy "$(AssemblyName).pdb" "C:\WorkSpace\HelloWCF\RealNorthwindService\HostIIS\bin" /Y
+    </PostBuildEvent>
+  </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>
       <FlavorProperties GUID="{3D9AD99F-2412-4246-B90B-4EAA41C64699}">
