@@ -64,15 +64,16 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
+    <None Include="HostIISTcp\Web.config" />
     <None Include="HostIIS\bin\RealNorthwindService.dll.config" />
     <None Include="HostIIS\Web.config">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="HostIISTcp\bin\" />
-  </ItemGroup>
-  <ItemGroup>
+    <Content Include="HostIISTcp\bin\RealNorthwindService.dll" />
+    <Content Include="HostIISTcp\bin\RealNorthwindService.pdb" />
     <Content Include="HostIIS\bin\RealNorthwindService.dll" />
     <Content Include="HostIIS\bin\RealNorthwindService.pdb" />
   </ItemGroup>

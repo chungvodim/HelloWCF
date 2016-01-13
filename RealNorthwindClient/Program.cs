@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using RealNorthwindClient.ProductServiceRef;
 using System.ServiceModel;
+using System.Diagnostics;
 
 namespace RealNorthwindClient
 {
@@ -14,6 +15,8 @@ namespace RealNorthwindClient
         {
             try
             {
+                Stopwatch sw = new Stopwatch();
+                sw.Start();
                 ProductServiceClient client = new ProductServiceClient();
                 Product product = client.GetProduct(23);
                 Console.WriteLine("product name is " + product.ProductName);
@@ -23,6 +26,8 @@ namespace RealNorthwindClient
                 bool result = client.UpdateProduct(product, ref message);
                 Console.WriteLine("Update result is " + result.ToString());
                 Console.WriteLine("Update message is " + message);
+                sw.Stop();
+                Console.WriteLine("HTTP Elapsed: " + sw.Elapsed);
             }
             catch (FaultException<ProductFault> ex)
             {
