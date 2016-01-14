@@ -15,10 +15,12 @@ namespace RealNorthwindService
         //[WebGet(UriTemplate = "date/{year}/{month}/{day}", ResponseFormat = WebMessageFormat.Xml)]
         [OperationContract]
         [FaultContract(typeof(ProductFault))]
+        [WebInvoke(Method = "GET", BodyStyle = WebMessageBodyStyle.Wrapped, ResponseFormat = WebMessageFormat.Json)]
         Product GetProduct(int id);
 
         [OperationContract]
         [FaultContract(typeof(ProductFault))]
+        [WebInvoke(Method = "POST", BodyStyle = WebMessageBodyStyle.Wrapped, ResponseFormat = WebMessageFormat.Json)]
         bool UpdateProduct(Product product, ref string message);
 
         // TODO: Add your service operations here
