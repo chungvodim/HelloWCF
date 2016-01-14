@@ -1,4 +1,4 @@
-﻿using RealNorthwindClientTcp.RealNorthwindServiceRef;
+﻿using RealNorthwindClientTcp.ProductServiceRef;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -43,10 +43,12 @@ namespace RealNorthwindClientTcp
             catch (CommunicationException ex)
             {
                 Console.WriteLine("Communication exception");
+                Console.WriteLine(ex.Message);
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Unknown exception");
+                Console.WriteLine(ex.Message);
             }
             Console.ReadLine();
         }

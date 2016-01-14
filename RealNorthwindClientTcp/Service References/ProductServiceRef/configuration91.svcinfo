@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="167en3ZDUvqN1rIjWG/uQXiPXUM=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="kad7JE+dJts6nBB3pOhhYs9t0RE=">
   <bindingConfigurations>
     <bindingConfiguration bindingType="netTcpBinding" name="NetTcpBinding_IProductService">
       <properties>
@@ -121,7 +121,7 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="NetTcpBinding_IProductService" contract="RealNorthwindServiceRef.IProductService" bindingType="netTcpBinding" address="net.tcp://sdev/RealNorthwindServiceTcp/ProductService.svc" bindingConfiguration="NetTcpBinding_IProductService">
+    <endpoint name="NetTcpBinding_IProductService" contract="ProductServiceRef.IProductService" bindingType="netTcpBinding" address="net.tcp://sdev/RealNorthwindServiceTcp/ProductService.svc" bindingConfiguration="NetTcpBinding_IProductService">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>net.tcp://sdev/RealNorthwindServiceTcp/ProductService.svc</serializedValue>
@@ -136,7 +136,7 @@
           <serializedValue>NetTcpBinding_IProductService</serializedValue>
         </property>
         <property path="/contract" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>RealNorthwindServiceRef.IProductService</serializedValue>
+          <serializedValue>ProductServiceRef.IProductService</serializedValue>
         </property>
         <property path="/headers" isComplexType="true" isExplicitlyDefined="false" clrType="System.ServiceModel.Configuration.AddressHeaderCollectionElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>System.ServiceModel.Configuration.AddressHeaderCollectionElement</serializedValue>

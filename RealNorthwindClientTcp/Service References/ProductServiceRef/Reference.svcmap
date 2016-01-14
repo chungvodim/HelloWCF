@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2aead999-d4d4-4f06-861c-aafbae4df611" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="68cad464-f1c6-43da-834e-05307024a6fb" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,10 +22,10 @@
     <MetadataSource Address="http://localhost/RealNorthwindServiceTcp/ProductService.svc?wsdl" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ProductService.wsdl" MetadataType="Wsdl" ID="81fe9423-d810-4a58-bbab-f90bffaeabc4" SourceId="1" SourceUrl="http://localhost/RealNorthwindServiceTcp/ProductService.svc?wsdl" />
-    <MetadataFile FileName="ProductService.xsd" MetadataType="Schema" ID="59033029-5bde-4834-be41-45aa1c116389" SourceId="1" SourceUrl="http://sdev/RealNorthwindServiceTcp/ProductService.svc?xsd=xsd1" />
-    <MetadataFile FileName="ProductService1.xsd" MetadataType="Schema" ID="ebc8b6c9-7938-4f6e-9b0e-638fad20c6d8" SourceId="1" SourceUrl="http://sdev/RealNorthwindServiceTcp/ProductService.svc?xsd=xsd2" />
-    <MetadataFile FileName="ProductService2.xsd" MetadataType="Schema" ID="afa4252a-99cf-4540-b50c-0a751a66a030" SourceId="1" SourceUrl="http://sdev/RealNorthwindServiceTcp/ProductService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ProductService.wsdl" MetadataType="Wsdl" ID="7ea62f15-b578-467a-9238-f8b769d7c055" SourceId="1" SourceUrl="http://localhost/RealNorthwindServiceTcp/ProductService.svc?wsdl" />
+    <MetadataFile FileName="ProductService.xsd" MetadataType="Schema" ID="3b2d58ad-4a33-422a-83ed-5dca0a697528" SourceId="1" SourceUrl="http://sdev/RealNorthwindServiceTcp/ProductService.svc?xsd=xsd1" />
+    <MetadataFile FileName="ProductService1.xsd" MetadataType="Schema" ID="7ba287b6-e2e0-493f-a4ea-a10405060374" SourceId="1" SourceUrl="http://sdev/RealNorthwindServiceTcp/ProductService.svc?xsd=xsd2" />
+    <MetadataFile FileName="ProductService2.xsd" MetadataType="Schema" ID="6c17428d-a185-46d4-9cfd-6e9a26981084" SourceId="1" SourceUrl="http://sdev/RealNorthwindServiceTcp/ProductService.svc?xsd=xsd0" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace RealNorthwindClientTcp.RealNorthwindServiceRef {
+namespace RealNorthwindClientTcp.ProductServiceRef {
     using System.Runtime.Serialization;
     using System;
     
@@ -168,23 +168,23 @@ namespace RealNorthwindClientTcp.RealNorthwindServiceRef {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="RealNorthwindServiceRef.IProductService")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ProductServiceRef.IProductService")]
     public interface IProductService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IProductService/GetProduct", ReplyAction="http://tempuri.org/IProductService/GetProductResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(RealNorthwindClientTcp.RealNorthwindServiceRef.ProductFault), Action="http://tempuri.org/IProductService/GetProductProductFaultFault", Name="ProductFault", Namespace="http://schemas.datacontract.org/2004/07/RealNorthwindService")]
-        RealNorthwindClientTcp.RealNorthwindServiceRef.Product GetProduct(int id);
+        [System.ServiceModel.FaultContractAttribute(typeof(RealNorthwindClientTcp.ProductServiceRef.ProductFault), Action="http://tempuri.org/IProductService/GetProductProductFaultFault", Name="ProductFault", Namespace="http://schemas.datacontract.org/2004/07/RealNorthwindService")]
+        RealNorthwindClientTcp.ProductServiceRef.Product GetProduct(int id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IProductService/GetProduct", ReplyAction="http://tempuri.org/IProductService/GetProductResponse")]
-        System.Threading.Tasks.Task<RealNorthwindClientTcp.RealNorthwindServiceRef.Product> GetProductAsync(int id);
+        System.Threading.Tasks.Task<RealNorthwindClientTcp.ProductServiceRef.Product> GetProductAsync(int id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IProductService/UpdateProduct", ReplyAction="http://tempuri.org/IProductService/UpdateProductResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(RealNorthwindClientTcp.RealNorthwindServiceRef.ProductFault), Action="http://tempuri.org/IProductService/UpdateProductProductFaultFault", Name="ProductFault", Namespace="http://schemas.datacontract.org/2004/07/RealNorthwindService")]
-        RealNorthwindClientTcp.RealNorthwindServiceRef.UpdateProductResponse UpdateProduct(RealNorthwindClientTcp.RealNorthwindServiceRef.UpdateProductRequest request);
+        [System.ServiceModel.FaultContractAttribute(typeof(RealNorthwindClientTcp.ProductServiceRef.ProductFault), Action="http://tempuri.org/IProductService/UpdateProductProductFaultFault", Name="ProductFault", Namespace="http://schemas.datacontract.org/2004/07/RealNorthwindService")]
+        RealNorthwindClientTcp.ProductServiceRef.UpdateProductResponse UpdateProduct(RealNorthwindClientTcp.ProductServiceRef.UpdateProductRequest request);
         
         // CODEGEN: Generating message contract since the operation has multiple return values.
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IProductService/UpdateProduct", ReplyAction="http://tempuri.org/IProductService/UpdateProductResponse")]
-        System.Threading.Tasks.Task<RealNorthwindClientTcp.RealNorthwindServiceRef.UpdateProductResponse> UpdateProductAsync(RealNorthwindClientTcp.RealNorthwindServiceRef.UpdateProductRequest request);
+        System.Threading.Tasks.Task<RealNorthwindClientTcp.ProductServiceRef.UpdateProductResponse> UpdateProductAsync(RealNorthwindClientTcp.ProductServiceRef.UpdateProductRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -193,7 +193,7 @@ namespace RealNorthwindClientTcp.RealNorthwindServiceRef {
     public partial class UpdateProductRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=0)]
-        public RealNorthwindClientTcp.RealNorthwindServiceRef.Product product;
+        public RealNorthwindClientTcp.ProductServiceRef.Product product;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://tempuri.org/", Order=1)]
         public string message;
@@ -201,7 +201,7 @@ namespace RealNorthwindClientTcp.RealNorthwindServiceRef {
         public UpdateProductRequest() {
         }
         
-        public UpdateProductRequest(RealNorthwindClientTcp.RealNorthwindServiceRef.Product product, string message) {
+        public UpdateProductRequest(RealNorthwindClientTcp.ProductServiceRef.Product product, string message) {
             this.product = product;
             this.message = message;
         }
@@ -228,12 +228,12 @@ namespace RealNorthwindClientTcp.RealNorthwindServiceRef {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IProductServiceChannel : RealNorthwindClientTcp.RealNorthwindServiceRef.IProductService, System.ServiceModel.IClientChannel {
+    public interface IProductServiceChannel : RealNorthwindClientTcp.ProductServiceRef.IProductService, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class ProductServiceClient : System.ServiceModel.ClientBase<RealNorthwindClientTcp.RealNorthwindServiceRef.IProductService>, RealNorthwindClientTcp.RealNorthwindServiceRef.IProductService {
+    public partial class ProductServiceClient : System.ServiceModel.ClientBase<RealNorthwindClientTcp.ProductServiceRef.IProductService>, RealNorthwindClientTcp.ProductServiceRef.IProductService {
         
         public ProductServiceClient() {
         }
@@ -254,29 +254,29 @@ namespace RealNorthwindClientTcp.RealNorthwindServiceRef {
                 base(binding, remoteAddress) {
         }
         
-        public RealNorthwindClientTcp.RealNorthwindServiceRef.Product GetProduct(int id) {
+        public RealNorthwindClientTcp.ProductServiceRef.Product GetProduct(int id) {
             return base.Channel.GetProduct(id);
         }
         
-        public System.Threading.Tasks.Task<RealNorthwindClientTcp.RealNorthwindServiceRef.Product> GetProductAsync(int id) {
+        public System.Threading.Tasks.Task<RealNorthwindClientTcp.ProductServiceRef.Product> GetProductAsync(int id) {
             return base.Channel.GetProductAsync(id);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        RealNorthwindClientTcp.RealNorthwindServiceRef.UpdateProductResponse RealNorthwindClientTcp.RealNorthwindServiceRef.IProductService.UpdateProduct(RealNorthwindClientTcp.RealNorthwindServiceRef.UpdateProductRequest request) {
+        RealNorthwindClientTcp.ProductServiceRef.UpdateProductResponse RealNorthwindClientTcp.ProductServiceRef.IProductService.UpdateProduct(RealNorthwindClientTcp.ProductServiceRef.UpdateProductRequest request) {
             return base.Channel.UpdateProduct(request);
         }
         
-        public bool UpdateProduct(RealNorthwindClientTcp.RealNorthwindServiceRef.Product product, ref string message) {
-            RealNorthwindClientTcp.RealNorthwindServiceRef.UpdateProductRequest inValue = new RealNorthwindClientTcp.RealNorthwindServiceRef.UpdateProductRequest();
+        public bool UpdateProduct(RealNorthwindClientTcp.ProductServiceRef.Product product, ref string message) {
+            RealNorthwindClientTcp.ProductServiceRef.UpdateProductRequest inValue = new RealNorthwindClientTcp.ProductServiceRef.UpdateProductRequest();
             inValue.product = product;
             inValue.message = message;
-            RealNorthwindClientTcp.RealNorthwindServiceRef.UpdateProductResponse retVal = ((RealNorthwindClientTcp.RealNorthwindServiceRef.IProductService)(this)).UpdateProduct(inValue);
+            RealNorthwindClientTcp.ProductServiceRef.UpdateProductResponse retVal = ((RealNorthwindClientTcp.ProductServiceRef.IProductService)(this)).UpdateProduct(inValue);
             message = retVal.message;
             return retVal.UpdateProductResult;
         }
         
-        public System.Threading.Tasks.Task<RealNorthwindClientTcp.RealNorthwindServiceRef.UpdateProductResponse> UpdateProductAsync(RealNorthwindClientTcp.RealNorthwindServiceRef.UpdateProductRequest request) {
+        public System.Threading.Tasks.Task<RealNorthwindClientTcp.ProductServiceRef.UpdateProductResponse> UpdateProductAsync(RealNorthwindClientTcp.ProductServiceRef.UpdateProductRequest request) {
             return base.Channel.UpdateProductAsync(request);
         }
     }
